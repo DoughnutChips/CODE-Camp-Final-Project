@@ -1,0 +1,21 @@
+let count = 0;
+let change = (document.getElementsByClassName("change"))[0];
+change.addEventListener("click", function(){
+  count += 1;
+  if(count%2 == 0) {
+      change.style.backgroundColor = "#F4364C"; 
+      change.style.color = "white";
+    }
+  else if(count%1 == 0) {
+      change.style.backgroundColor = "#0050B5";
+      change.style.color = "white";
+    }
+});
+
+async function fetching(){
+  let convert = await fetch("https://images.ctfassets.net")
+  convert.json().then(function(data){
+    console.log(data);
+  });
+}
+fetching();
