@@ -1,0 +1,107 @@
+h1{
+  border:black solid 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #FFE5CC;
+  color: black;
+}
+
+h2{
+  font-size: 40px;
+  text-decoration:underline;
+}
+
+body{
+  text-align: center;
+  font-family: "Lucida Handwriting", lucida, Cursive;
+  background-color: lightblue;
+}
+.list{
+  font-family: "Lucida Handwriting", lucida, Cursive;
+  position: relative;
+  text-align: left;
+  left: 350px;
+}
+
+p{
+  font-size: 20px;
+  font-family: "Courier New", new, Monospace;
+  font-weight:bold;
+}
+
+#fancy{
+  font-style: italic;
+  color: #7f00ff;
+  font-size: 35px;
+}
+
+
+.change{
+  padding: 32px 48px;
+  font-size: 20px;
+  border: black solid 2px;
+  border-radius: 10%;
+}
+
+/*animations*/
+
+@keyframes First {
+  0% {
+    width: 0px;
+  }
+  50% {
+   width: 960px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+@keyframes Second {
+  0% {
+    width: 0px;
+  }
+  50% {
+   width: 960px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes Third {
+  0% {
+    width: 0px;
+  }
+  50% {
+   width: 960px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+.one{
+  border: black solid 10px;
+  border-color:red;
+  width: 960px;
+  height: 0px;
+  animation: First 3s infinite;
+}
+.two{
+  border: black solid 10px;
+  border-color:green;
+  width: 960px;
+  height: 0px;
+  animation: Second 3s infinite;
+  animation-delay: 0.15s;
+  
+}
+
+.three{
+  border: black solid 10px;
+  border-color:blue;
+  width: 960px;
+  height: 0px;
+  animation: Third 3s infinite;
+  animation-delay: 0.3s;
+}
+
